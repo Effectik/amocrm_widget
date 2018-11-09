@@ -34,7 +34,7 @@ define(['jquery', 'lib/components/base/modal'], function ($, Modal) {
       settings: function () {
         if (AMOCRM.lang_id == "ru") {          
           // чекбокс
-          $("#sample_custom_content").html("<label><input type='checkbox' name='agreement' value='1'/>согласие с условиями передачи информации</label>").parent().show()
+          $("#sample_custom_content").html("<label for='agreement'>согласие с условиями передачи информации</label><input type='checkbox' name='agreement' value='1'/>").parent().show()
         }
       },
       dpSettings: function () {
